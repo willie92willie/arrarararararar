@@ -1,0 +1,17 @@
+<!-- AR.js demo based on the tutorial created at github: https://github.com/jeromeetienne/ar.js -->
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden;'>
+  
+  <a-scene embedded arjs='sourceType: webcam;'>
+      <a-marker preset='hiro'>
+<!--    Personalized model     -->
+        <a-entity 
+            scale="1.5, 1.5, 1.5" position="0,0,0" rotation="-90, 0, 0" obj-model="obj: url(head.obj);" >
+        </a-entity>
+      </a-marker>
+  <a-entity camera>
+  </a-entity>
+  </a-scene>
+</body>
